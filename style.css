@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9faf7;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* 🌿 Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+}
+
+.overlay span {
+  color: #a7f3d0;
+}
+
+.overlay p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+#exploreBtn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #34d399;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#exploreBtn:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ☕ Menu Section */
+#menu {
+  padding: 60px 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  color: #065f46;
+  font-size: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#countrySelect {
+  padding: 8px 12px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.menu-item {
+  background: #fff;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-item h3 {
+  color: #047857;
+  margin-top: 10px;
+}
+
+.menu-item p {
+  color: #555;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+
+.menu-item strong {
+  display: block;
+  margin: 10px 0;
+  color: #065f46;
+}
+
+/* 🌱 Footer */
+footer {
+  background: #065f46;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  margin-top: 50px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBrew Café ☕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🌿 Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Welcome to <span>GreenBrew Café ☕</span></h1>
+      <p>Where every sip brings calm, comfort, and creativity 🌿</p>
+      <button id="exploreBtn">☕ Explore Our Menu</button>
+    </div>
+  </section>
+
+  <!-- ☕ Menu Section -->
+  <section id="menu" class="hidden">
+    <h2>Our Signature Drinks</h2>
+    <p class="subtitle">Explore the flavors of India 🇮🇳, Japan 🇯🇵, and Italy 🇮🇹</p>
+
+    <label for="countrySelect">🌍 Choose Country:</label>
+    <select id="countrySelect">
+      <option value="all">All</option>
+      <option value="india">India</option>
+      <option value="japan">Japan</option>
+      <option value="italy">Italy</option>
+    </select>
+
+    <div class="menu-container" id="menuContainer"></div>
+  </section>
+
+  <!-- 🌱 Footer -->
+  <footer>
+    <p>© 2025 GreenBrew Café | Crafted by Aakash Dubba ☕</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
